@@ -1,1 +1,2 @@
-
+This project uses only built-in Python modules (json, os).
+No additional packages are needed to run this project.
