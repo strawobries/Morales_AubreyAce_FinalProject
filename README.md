@@ -23,6 +23,8 @@ To improve usability, the program supports saving and loading data using JSON fi
 ## Sample CLI Screenshots
 <img width="1256" height="903" alt="image" src="https://github.com/user-attachments/assets/4925edc8-bdf6-4086-9f78-60fd8d424bdd" />
 <img width="1256" height="902" alt="image" src="https://github.com/user-attachments/assets/760adda7-1bf1-481c-9409-602ce3582877" />
+<img width="1247" height="945" alt="image" src="https://github.com/user-attachments/assets/f08acbb5-c1e0-44e2-b996-457b722f9033" />
+
 
 ## Setup Guide
 1. Download or clone this repository.
