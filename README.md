@@ -20,7 +20,7 @@ To improve usability, the program supports saving and loading data using JSON fi
 - Load Data
 
 ## Sample CLI Screenshots
-
+<img width="1256" height="903" alt="image" src="https://github.com/user-attachments/assets/4925edc8-bdf6-4086-9f78-60fd8d424bdd" />
 
 ## Setup Guide
 1. Download or clone this repository.
