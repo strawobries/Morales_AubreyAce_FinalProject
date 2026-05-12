@@ -11,14 +11,27 @@ from session import Session
 
 
 class SessionManager:
+    """
+    Manages all study session operations.
+    """
+
     def __init__(self):
+        """
+        Initializes the session manager.
+        """
+
         self.sessions = []
+
         self.file_path = os.path.join(
             "data",
             "sessions.json"
         )
 
     def add_session(self, session):
+        """
+        Adds a new study session.
+        """
+
         if any(
             s.session_id == session.session_id
             for s in self.sessions
@@ -27,9 +40,14 @@ class SessionManager:
             return
 
         self.sessions.append(session)
+
         print("Session added successfully.")
 
     def view_sessions(self):
+        """
+        Displays all study sessions.
+        """
+
         if not self.sessions:
             print("No sessions found.")
             return
@@ -53,6 +71,10 @@ class SessionManager:
             print("-" * 30)
 
     def search_session(self, session_id):
+        """
+        Searches for a session using the ID.
+        """
+
         for s in self.sessions:
             if s.session_id == session_id:
 
@@ -76,8 +98,13 @@ class SessionManager:
         print("Session not found.")
 
     def delete_session(self, session_id):
+        """
+        Deletes a study session.
+        """
+
         for s in self.sessions:
             if s.session_id == session_id:
+
                 self.sessions.remove(s)
 
                 print(
@@ -89,6 +116,10 @@ class SessionManager:
         print("Session not found.")
 
     def update_session(self, session_id):
+        """
+        Updates an existing study session.
+        """
+
         for s in self.sessions:
             if s.session_id == session_id:
 
@@ -125,10 +156,12 @@ class SessionManager:
 
                 try:
                     if duration:
+
                         (
                             s.hours,
                             s.minutes,
                             s.seconds
+
                         ) = map(
                             int,
                             duration.split(":")
@@ -152,6 +185,10 @@ class SessionManager:
         print("Session not found.")
 
     def sort_sessions(self):
+        """
+        Sorts study sessions alphabetically.
+        """
+
         self.sessions.sort(
             key=lambda s: s.subject.lower()
         )
@@ -175,12 +212,20 @@ class SessionManager:
             print("-" * 30)
 
     def count_sessions(self):
+        """
+        Displays the total number of sessions.
+        """
+
         print(
             f"Total sessions: "
             f"{len(self.sessions)}"
         )
 
     def total_study_time(self):
+        """
+        Calculates the total study time.
+        """
+
         total_seconds = sum(
             (s.hours * 3600) +
             (s.minutes * 60) +
@@ -204,6 +249,10 @@ class SessionManager:
         )
 
     def save_to_file(self):
+        """
+        Saves session data into a JSON file.
+        """
+
         os.makedirs("data", exist_ok=True)
 
         with open(
@@ -223,6 +272,10 @@ class SessionManager:
         print("Data saved successfully.")
 
     def load_from_file(self):
+        """
+        Loads session data from a JSON file.
+        """
+
         if not os.path.exists(self.file_path):
             print("No saved file found.")
             return
