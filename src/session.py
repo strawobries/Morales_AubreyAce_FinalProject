@@ -7,6 +7,10 @@ for storing study session information.
 
 
 class Session:
+    """
+    Represents a study session record.
+    """
+
     def __init__(
         self,
         session_id,
@@ -17,6 +21,10 @@ class Session:
         date,
         notes
     ):
+        """
+        Initializes a study session object.
+        """
+
         self.session_id = session_id
         self.subject = subject
         self.hours = hours
@@ -26,6 +34,10 @@ class Session:
         self.notes = notes
 
     def to_dict(self):
+        """
+        Converts the session object into a dictionary.
+        """
+
         return {
             "session_id": self.session_id,
             "subject": self.subject,
@@ -38,6 +50,10 @@ class Session:
 
     @staticmethod
     def from_dict(data):
+        """
+        Creates a Session object from dictionary data.
+        """
+
         return Session(
             data["session_id"],
             data["subject"],
