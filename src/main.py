@@ -10,7 +10,12 @@ from manager import SessionManager
 
 
 def menu():
+    """
+    Displays the application menu.
+    """
+
     print("\n===== Study Time =====")
+
     print("1. Add Session")
     print("2. View Sessions")
     print("3. Search Session")
@@ -25,6 +30,10 @@ def menu():
 
 
 def main():
+    """
+    Runs the Study Time application.
+    """
+
     manager = SessionManager()
 
     while True:
@@ -35,6 +44,7 @@ def main():
         ).strip()
 
         if choice == "1":
+
             try:
                 session_id = input(
                     "Enter ID: "
@@ -67,6 +77,7 @@ def main():
                     not session_id
                     or not subject
                 ):
+
                     print(
                         "ID and Subject "
                         "are required."
@@ -89,6 +100,7 @@ def main():
                 )
 
             except ValueError:
+
                 print(
                     "Invalid duration format. "
                     "Use HH:MM:SS"
@@ -98,6 +110,7 @@ def main():
             manager.view_sessions()
 
         elif choice == "3":
+
             session_id = input(
                 "Search ID: "
             ).strip()
@@ -107,6 +120,7 @@ def main():
             )
 
         elif choice == "4":
+
             session_id = input(
                 "Enter ID to delete: "
             ).strip()
@@ -116,6 +130,7 @@ def main():
             )
 
         elif choice == "5":
+
             session_id = input(
                 "Enter ID to update: "
             ).strip()
@@ -140,6 +155,7 @@ def main():
             manager.load_from_file()
 
         elif choice == "11":
+
             print(
                 "Well Done, Keep it up!"
             )
