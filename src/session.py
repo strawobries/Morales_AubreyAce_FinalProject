@@ -1,8 +1,8 @@
 """
 Session Module
 
-This module defines the Session class,
-which stores study session information.
+This module defines the Session class
+for storing study session information.
 """
 
 
