@@ -1,7 +1,8 @@
 """
 Main Module
 
-This module runs the Study Time application.
+This module runs the Study Time
+CLI application.
 """
 
 from session import Session
