@@ -19,6 +19,9 @@ To improve usability, the program supports saving and loading data using JSON fi
 - Save Data
 - Load Data
 
+## Sample CLI Screenshots
+
+
 ## Setup Guide
 1. Download or clone this repository.
 2. Open terminal in the project folder.
