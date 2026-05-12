@@ -1,7 +1,8 @@
 """
 Session Manager Module
 
-This module handles study session management.
+This module handles all study session
+management functions in the application.
 """
 
 import json
@@ -155,7 +156,23 @@ class SessionManager:
             key=lambda s: s.subject.lower()
         )
 
-        print("Sessions sorted successfully.")
+        print("\n--- Sorted Sessions ---")
+
+        for s in self.sessions:
+            print(f"ID: {s.session_id}")
+            print(f"Subject: {s.subject}")
+
+            print(
+                f"Duration: "
+                f"{s.hours}h "
+                f"{s.minutes}m "
+                f"{s.seconds}s"
+            )
+
+            print(f"Date: {s.date}")
+            print(f"Notes: {s.notes}")
+
+            print("-" * 30)
 
     def count_sessions(self):
         print(
