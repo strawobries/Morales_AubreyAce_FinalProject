@@ -22,7 +22,16 @@ class Session:
         notes
     ):
         """
-        Initializes a study session object.
+        Initializes a Session object.
+
+        Args:
+            session_id: Unique session ID.
+            subject: Study subject name.
+            hours: Study hours.
+            minutes: Study minutes.
+            seconds: Study seconds.
+            date: Session date.
+            notes: Additional notes.
         """
 
         self.session_id = session_id
@@ -36,6 +45,9 @@ class Session:
     def to_dict(self):
         """
         Converts the session object into a dictionary.
+
+        Returns:
+            dict: Session data dictionary.
         """
 
         return {
@@ -52,6 +64,12 @@ class Session:
     def from_dict(data):
         """
         Creates a Session object from dictionary data.
+
+        Args:
+            data: Dictionary containing session data.
+
+        Returns:
+            Session: New Session object.
         """
 
         return Session(
