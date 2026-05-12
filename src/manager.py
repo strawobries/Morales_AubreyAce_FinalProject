@@ -17,7 +17,7 @@ class SessionManager:
 
     def __init__(self):
         """
-        Initializes the session manager.
+        Initializes the SessionManager object.
         """
 
         self.sessions = []
@@ -30,6 +30,9 @@ class SessionManager:
     def add_session(self, session):
         """
         Adds a new study session.
+
+        Args:
+            session: Session object to add.
         """
 
         if any(
@@ -72,7 +75,10 @@ class SessionManager:
 
     def search_session(self, session_id):
         """
-        Searches for a session using the ID.
+        Searches for a study session.
+
+        Args:
+            session_id: ID of the session.
         """
 
         for s in self.sessions:
@@ -100,6 +106,9 @@ class SessionManager:
     def delete_session(self, session_id):
         """
         Deletes a study session.
+
+        Args:
+            session_id: ID of the session.
         """
 
         for s in self.sessions:
@@ -118,6 +127,9 @@ class SessionManager:
     def update_session(self, session_id):
         """
         Updates an existing study session.
+
+        Args:
+            session_id: ID of the session.
         """
 
         for s in self.sessions:
@@ -213,7 +225,7 @@ class SessionManager:
 
     def count_sessions(self):
         """
-        Displays the total number of sessions.
+        Displays total number of sessions.
         """
 
         print(
@@ -223,7 +235,7 @@ class SessionManager:
 
     def total_study_time(self):
         """
-        Calculates the total study time.
+        Calculates total study time.
         """
 
         total_seconds = sum(
