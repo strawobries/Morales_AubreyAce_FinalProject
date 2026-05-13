@@ -1,4 +1,4 @@
-# Study Time
+## Study Time
 
 ### Project Overview
 Study Time is a Python-based CLI application designed to help students manage and track their study sessions efficiently.
@@ -9,7 +9,7 @@ The application also includes useful features like counting total study sessions
 
 Study Time applies object-oriented programming concepts, file handling, searching, sorting, and data management to create a simple and practical academic productivity tool.
 
-## Features
+### Features
 - Add Session
 - View Sessions
 - Search Session
@@ -22,18 +22,18 @@ Study Time applies object-oriented programming concepts, file handling, searchin
 - Load Data
 - Exit
 
-## Sample CLI Usage Screenshots
+### Sample CLI Usage Screenshots
 <img width="1256" height="903" alt="image" src="https://github.com/user-attachments/assets/4925edc8-bdf6-4086-9f78-60fd8d424bdd" />
 <img width="1256" height="902" alt="image" src="https://github.com/user-attachments/assets/760adda7-1bf1-481c-9409-602ce3582877" />
 <img width="1247" height="945" alt="image" src="https://github.com/user-attachments/assets/f08acbb5-c1e0-44e2-b996-457b722f9033" />
 
 
-## Setup Guide
+### Setup Guide
 1. Download or clone this repository.
 2. Open terminal in the project folder.
 3. Run:
 
 python src/main.py
 
-## YouTube Demo
+### YouTube Demo
 https://youtu.be/Ml-emdi7RO4?si=dN6W-fH6lIu7NgQ5
