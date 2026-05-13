@@ -1,6 +1,6 @@
 # Study Time
 
-## Project Overview
+### Project Overview
 Study Time is a Python-based CLI application designed to help students manage and track their study sessions efficiently.
 
 The program allows users to add, view, search, update, delete, and sort study session records. Each session stores important information such as session ID, subject, study duration, date, and personal notes.
