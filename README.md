@@ -36,4 +36,4 @@ Study Time applies object-oriented programming concepts, file handling, searchin
 python src/main.py
 
 ### YouTube Demo
-https://youtu.be/Ml-emdi7RO4?si=dN6W-fH6lIu7NgQ5
+https://youtu.be/t9O7M41kn9I?si=BpKNWiO0AlfaAWEd
