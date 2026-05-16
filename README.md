@@ -28,12 +28,15 @@ Study Time applies object-oriented programming concepts, file handling, searchin
 <img width="1247" height="945" alt="image" src="https://github.com/user-attachments/assets/f08acbb5-c1e0-44e2-b996-457b722f9033" />
 
 
-### Setup Guide
-1. Download or clone this repository.
-2. Open terminal in the project folder.
-3. Run:
+### Installation/Setup Steps
+1. Download or clone the repository from GitHub.
+2. Open the project folder using VS Code or any code editor.
+3. Open the terminal inside the project folder.
+4. Run the program using:
 
 python src/main.py
+
+5. The application will start and display the menu.
 
 ### YouTube Demo
 https://youtu.be/t9O7M41kn9I?si=BpKNWiO0AlfaAWEd
